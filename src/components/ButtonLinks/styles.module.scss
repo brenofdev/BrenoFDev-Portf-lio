@@ -1,0 +1,23 @@
+.buttonLink {
+  width: 13.2rem;
+  height: 3.8rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: white;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  border-image: linear-gradient(94.7deg, rgba(14, 248, 234, 0.85), rgba(233, 25, 175, 0.85)) 1;
+
+  transition: background 0.2s;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.253);
+  }
+}
+

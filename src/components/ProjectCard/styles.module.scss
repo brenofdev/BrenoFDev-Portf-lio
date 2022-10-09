@@ -1,0 +1,56 @@
+.projectCard {
+  // max-width: 109rem;
+  cursor: pointer;
+
+  img {
+    width: 40rem;
+    height: 20rem;
+
+    border-radius: 0.5rem 0.5rem 0 0;
+    
+  }
+
+  .projectDescription {
+    width: 40rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: -0.7rem;
+
+    background-color: #1E1E1E;
+    border-radius: 0 0 0.5rem 0.5rem;
+
+    padding-top: 1.2rem;
+    padding-left: 1.1rem;
+
+    strong {
+      font-weight: 800;
+      font-size: 1.8rem;
+      
+    }
+
+    .content {
+      max-width: 38rem;
+      padding-top: 1rem;
+      font-weight: 400;
+      line-height: 2rem;
+      color: #A8A8B3;
+    }
+
+    .category {
+      margin-top: 2rem;
+      width: 15rem;
+      height: 3rem;
+      background-color: #313131;
+      border-radius: 0.5rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      color: white;
+      font-weight: bold;
+
+    }
+  }
+}

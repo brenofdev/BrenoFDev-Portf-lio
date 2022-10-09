@@ -1,0 +1,21 @@
+.container {
+  background-image: url('/images/bg-linear.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vw - 9.2rem);
+}
+
+.content {
+  padding-top: 8.8rem;
+  padding-left: 12rem;
+  padding-right: 7rem;
+  
+  max-width: 145rem;
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  grid-gap: 6rem;
+  
+  
+  
+}
+

@@ -1,0 +1,32 @@
+.container {
+  background-image: url('/images/bg-linear.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc(100vh - 9.2rem);
+}
+
+.content {
+  height: calc(100vh - 25rem);
+  padding-left: 12.3rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  
+}
+
+.arrows {
+  padding-left: 12.3rem;
+  padding-right: 15rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+}
