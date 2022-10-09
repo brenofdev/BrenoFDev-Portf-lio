@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Button } from '../ContactModalButton/index';
 
 import styles from './styles.module.scss';
@@ -12,8 +13,8 @@ export function Header({onOpenModal}: ModalOpenProps) {
       <div className={styles.headerContent}>
         <p>FrontLine</p>
         <nav>
-          <a href="/" className={styles.active}>Home</a>
-          <a href="/projects">Projetos</a>
+          <Link href="/" className={styles.active}>Home</Link>
+          <Link href="/projects">Projetos</Link>
         </nav>
         <Button onOpenModal={onOpenModal} />
       </div>
