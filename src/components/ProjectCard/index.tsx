@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from 'next/link';
 // import { GraphQLClient, gql } from 'graphql-request';
 
@@ -13,7 +14,13 @@ export function ProjectCard({
   return (
     <Link href={`/posts/${slug}`} >
       <div className={styles.projectCard}>
-        <img src={coverPhoto.url} alt="" />
+        <Image 
+          // className={styles.coverPhoto} 
+          src={coverPhoto.url} 
+          alt="capa do projeto" 
+          width={400}
+          height={200}
+        />
 
         <div className={styles.projectDescription}>
           <strong>{title}</strong>

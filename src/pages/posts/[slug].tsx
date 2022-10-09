@@ -1,4 +1,5 @@
 import { GraphQLClient, gql } from 'graphql-request';
+import Image from 'next/image';
 
 import styles from './slug.module.scss';
 
@@ -68,7 +69,14 @@ export default function ProjectPost({post}){
           dangerouslySetInnerHTML={{ __html: post.content.html }}
         ></div>
       </div>
-      <img src={post.projectPhoto.url} alt="" />
+      <Image 
+        // className={styles.projectPhoto} 
+        src={post.projectPhoto.url} 
+        alt="banner do projeto"
+        width={1700}
+        height={3000} 
+        
+      />
     </main>
   )
 }
