@@ -31,14 +31,14 @@ const mailer = ({ senderMail, name, text }) => {
   });
 };
 
-export default async ({req, res}) => {
-  const { senderMail, name, content } = req.body;
+// export default async ({req, res}) => {
+//   const { senderMail, name, content } = req.body;
 
-  if(!senderMail || !name || !content) {
-    res.status(403).send();
-    return;
-  }
+//   if(!senderMail || !name || !content) {
+//     res.status(403).send();
+//     return;
+//   }
 
-  const mailerRes = await mailer({ senderMail, name, text: content});
-  res.send(mailerRes);
-};
+//   const mailerRes = await mailer({ senderMail, name, text: content});
+//   res.send(mailerRes);
+// };
