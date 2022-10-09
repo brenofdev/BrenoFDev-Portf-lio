@@ -33,14 +33,14 @@ const QUERY = gql`
 `
 
 export async function getStaticProps(){
-  const graphcms = getGraphCMS()
+  const graphcms = getGraphCMS();
   const {posts} = await graphcms.request(QUERY);
   return {
     props: {
       posts,
     },
     revalidate: 30,
-  }
+  };
 }
 
 

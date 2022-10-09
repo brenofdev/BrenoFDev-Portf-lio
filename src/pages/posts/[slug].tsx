@@ -4,9 +4,7 @@ import { getGraphCMS } from '../../services/graphcms';
 
 import styles from './slug.module.scss';
 
-// const graphcms = new GraphQLClient(
-//   process.env.GRAPHCMS_CONTENT_API
-// );
+const graphcms = getGraphCMS()
 
 const QUERY = gql`
   query Post($slug: String!){
@@ -32,32 +30,30 @@ const QUERY = gql`
 
 const SLUGLIST = gql`
   {
-    posts{
+    posts {
       slug
     }
   }
 `;
 
-const graphcms = getGraphCMS()
-
 export async function getStaticPaths() {
-  const {posts} = await graphcms.request(SLUGLIST);
+  const { posts } = await graphcms.request(SLUGLIST);
   return {
-    paths: posts.map((post) => ({params: {slug: post.slug}})),
+    paths: posts.map((post) => ({ params: { slug: post.slug } })),
     fallback: false,
   };
 }
 
-export async function getStaticProps({params}){
+export async function getStaticProps({ params }) {
   const slug = params.slug;
-  const data = await graphcms.request(QUERY, {slug});
+  const data = await graphcms.request(QUERY, { slug });
   const post = data.post;
   return {
     props: {
       post,
     },
     revalidate: 30,
-  }
+  };
 }
 
 export default function ProjectPost({post}){

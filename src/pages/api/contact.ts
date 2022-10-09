@@ -31,7 +31,7 @@ const mailer = ({ senderMail, name, text }) => {
   });
 };
 
-export default async (req, res) => {
+export default async ({req, res}) => {
   const { senderMail, name, content } = req.body;
 
   if(!senderMail || !name || !content) {

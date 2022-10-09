@@ -13,8 +13,12 @@ export function Header({onOpenModal}: ModalOpenProps) {
       <div className={styles.headerContent}>
         <p>FrontLine</p>
         <nav>
-          <Link href="/" className={styles.active}>Home</Link>
-          <Link href="/projects">Projetos</Link>
+          <Link href="/" >
+            <a className={styles.active}>Home</a> 
+          </Link>
+          <Link href="/projects">
+            <a>Projetos</a> 
+          </Link>
         </nav>
         <Button onOpenModal={onOpenModal} />
       </div>
