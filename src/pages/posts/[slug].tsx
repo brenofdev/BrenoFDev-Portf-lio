@@ -1,11 +1,12 @@
-import { GraphQLClient, gql } from 'graphql-request';
+import { gql } from 'graphql-request';
 import Image from 'next/image';
+import { getGraphCMS } from '../../services/graphcms';
 
 import styles from './slug.module.scss';
 
-const graphcms = new GraphQLClient(
-  process.env.GRAPHCMS_CONTENT_API
-);
+// const graphcms = new GraphQLClient(
+//   process.env.GRAPHCMS_CONTENT_API
+// );
 
 const QUERY = gql`
   query Post($slug: String!){
@@ -36,6 +37,8 @@ const SLUGLIST = gql`
     }
   }
 `;
+
+const graphcms = getGraphCMS()
 
 export async function getStaticPaths() {
   const {posts} = await graphcms.request(SLUGLIST);
