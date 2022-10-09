@@ -1,14 +1,15 @@
 
 // import ferdzImg from '../../public/images/ferdzImg.png';
-import { GraphQLClient, gql } from 'graphql-request';
+import { gql } from 'graphql-request';
 // import { useEffect, useState } from 'react';
 import { ProjectCard } from '../components/ProjectCard';
+import { getGraphCMS } from '../services/graphcms';
 
 import styles from './projects.module.scss';
 
-const graphcms = new GraphQLClient(
-  process.env.GRAPHCMS_CONTENT_API
-);
+// const graphcms = new GraphQLClient(
+//   process.env.GRAPHCMS_CONTENT_API
+// );
 
 const QUERY = gql`
   {
@@ -32,6 +33,7 @@ const QUERY = gql`
 `
 
 export async function getStaticProps(){
+  const graphcms = getGraphCMS()
   const {posts} = await graphcms.request(QUERY);
   return {
     props: {
