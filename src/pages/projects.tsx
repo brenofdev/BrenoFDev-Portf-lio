@@ -7,7 +7,7 @@ import { ProjectCard } from '../components/ProjectCard';
 import styles from './projects.module.scss';
 
 const graphcms = new GraphQLClient(
-  'https://api-sa-east-1.hygraph.com/v2/cl905gwq71ckm01t620nj3dzs/master'
+  process.env.GRAPHCMS_CONTENT_API
 );
 
 const QUERY = gql`
