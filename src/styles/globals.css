@@ -5,6 +5,18 @@
 }
 
 :root {
+  --linear-stroke: linear-gradient(94.7deg, rgba(134, 37, 150, 0.85), rgba(255, 30, 138, 0.85)) 1;
+  --linear-fill: linear-gradient(86.08deg, rgba(134, 37, 150, 0.85) -9.87%, rgba(255, 30, 138, 0.85) 94.05%);
+
+
+  --white-primary: #FCFCFC;
+  --white-secondary: #E1E1E6;
+  --gray-primary: #A8A8B3;
+
+  --black-primary: #333333;
+  --pink-primary: #FF1E8A;
+  --violet-primary: #862596;
+
   font-size: 62.5%; /* 1rem = 10px */
 }
 
@@ -22,7 +34,7 @@
 
 body {
   background: #333;
-  color: white;
+  color: var(--black-primary);
   font-size: 1.6rem;
   font-family: 'Poppins';
 }

@@ -1,5 +1,8 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '../ContactModalButton/index';
+
+import logoImg from '../../../public/images/logo.svg';
 
 import styles from './styles.module.scss';
 
@@ -11,7 +14,7 @@ export function Header({onOpenModal}: ModalOpenProps) {
   return (
     <header className={styles.headerContainer}>
       <div className={styles.headerContent}>
-        <p>FrontLine</p>
+        <Image src={logoImg}/>
         <nav>
           <Link href="/" >
             <a className={styles.active}>Home</a> 
@@ -21,9 +24,6 @@ export function Header({onOpenModal}: ModalOpenProps) {
           </Link>
         </nav>
         <Button onOpenModal={onOpenModal} />
-      </div>
-      <div>
-        
       </div>
     </header>
   )

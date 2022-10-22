@@ -1,4 +1,4 @@
-import { ClipboardText } from 'phosphor-react';
+import { User } from 'phosphor-react';
 
 import styles from './styles.module.scss';
 
@@ -9,7 +9,7 @@ interface ButtonModalProps {
 export function Button({onOpenModal}: ButtonModalProps) {
   return (
     <button type="button" className={styles.button} onClick={onOpenModal}> 
-      <ClipboardText size={15}/>
+      <User size={17}/>
       Contato
     </button>
   )

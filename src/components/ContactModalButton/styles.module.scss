@@ -5,19 +5,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 0.8rem;
 
   font-size: 1.4rem;
-  font-weight: 700;
-  color: white;
-  border: 1px solid rgba(0, 0, 0, 0.349);
-  border-radius: 0.5rem;
-  background: rgba(0, 0, 0, 0.267);
+  font-weight: 500;
+  color: var(--white-secondary);
+  border: 1px solid var(--white-secondary);
+  border-radius: 0.4rem;
+  background: transparent;
 
-  transition: background 0.2s;
+  transition: color 0.2s;
 
   &:hover {
-    background: rgba(255, 255, 255, 0.253);
+    border-color: var(--pink-primary);
+    color: var(--pink-primary);
   }
   
 }

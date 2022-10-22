@@ -1,0 +1,74 @@
+.homeContainer {
+  background-image: url('/images/bg-home.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 9.2rem);
+  padding: 20rem 15rem;
+
+  .contentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .introduction {
+      display: flex;
+      flex-direction: column;
+
+      h1 {
+        font-size: 3rem;
+        color: var(--black-primary);
+        font-weight: 600;
+
+        span {
+          color: var(--pink-primary);
+        }
+      }
+
+      p {
+        max-width: 34.8rem;
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: var(--black-primary);
+
+        margin: 1.6rem 0 4.8rem 0;
+      }
+
+      div {
+        display: flex;
+        gap: 1.6rem;
+      }
+    }
+  }
+  
+  .footerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 20rem;
+
+    .curriculum {
+      font-weight: 500;
+
+      color: var(--gray-primary);
+    }
+
+    .arrows {
+      display: flex;
+      align-items: center;
+    
+      a {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+
+        font-size: 1.8rem;
+        font-weight: 500;
+      }
+    }
+  }
+  
+}
+
+
