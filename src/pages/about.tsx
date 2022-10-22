@@ -16,7 +16,7 @@ export default function About() {
   return (
     <>
       <Head>
-        <title>Sobre mim | FrontLine</title>
+        <title>Sobre mim | Breno Dev</title>
       </Head>
 
       <main className={styles.aboutContainer}>
