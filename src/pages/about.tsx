@@ -33,7 +33,7 @@ export default function About() {
             </p>
 
             <div>
-              <Image src={languagesAbout} width={350} height={70} />
+              <Image src={languagesAbout} width={350} height={70} alt="icones linguagens de programação" />
             </div>
           </div>
 

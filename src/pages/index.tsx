@@ -40,7 +40,7 @@ export default function Home() {
           </div>
 
           <div className={styles.logoHome}>
-            <Image src={logoHome} width={400} height={282}/>
+            <Image src={logoHome} width={400} height={282} alt="logo breno dev"/>
           </div>
         </section>
 

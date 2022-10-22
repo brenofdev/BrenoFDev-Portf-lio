@@ -13,7 +13,7 @@ interface CertificateProps {
 export function CertificateCard({ iconLogo, name, date }: CertificateProps) {
   return (
     <div className={styles.certificateCardContainer}>
-      <Image src={iconLogo} />
+      <Image src={iconLogo} alt="logo dos cursos"/>
       <strong>{name}</strong>
       <hr />
       <small>{date}</small>
