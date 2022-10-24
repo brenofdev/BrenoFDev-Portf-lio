@@ -14,7 +14,7 @@ export function Header({onOpenModal}: ModalOpenProps) {
   return (
     <header className={styles.headerContainer}>
       <div className={styles.headerContent}>
-        <Image src={logoImg}/>
+        <Image src={logoImg} alt="logo brenodev"/>
         <nav>
           <Link href="/" >
             <a className={styles.active}>Home</a> 
