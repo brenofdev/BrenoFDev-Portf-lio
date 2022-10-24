@@ -27,7 +27,7 @@ export default function About() {
             <p>
               Oi xD, me chamo Breno Fernandes e tenho 22 anos.
               <br /> <br />
-              Desde meus 18 anos, eu já trabalhei como copywriter, ux designer e gestor de tráfego, mas foi na programação onde me prendi e levarei essa área como uma carreira.
+              Desde meus 18 anos, eu já trabalhei como copywriter, ux designer e gestor de tráfego, mas foi na programação onde me prendi e levarei esta área como uma carreira.
               <br /> <br />
               Atualmente sou freelancer, tenho <span>três projetos</span> reais que estão aqui no site como portfólio, e estou em busca da minha <span>primeira oportunidade</span> no mercado.
             </p>
