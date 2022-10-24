@@ -7,7 +7,7 @@ import logoRocketseat from '../../public/images/logo-rocketseat.png';
 
 import { CertificateCardCarousel } from "../components/CertificateCardCarousel";
 
-import styles from './certificates.module.scss';
+import styles from '../styles/pages/certificates.module.scss';
 
 export default function Certificates() {
   return (
@@ -18,9 +18,7 @@ export default function Certificates() {
 
       <main className={styles.container}>
         <section className={styles.content}>
-          <h4>Certificado</h4>
-
-          
+          <h4>Certificado</h4>          
           
           <div className={styles.certificateCarouselContainer}>
             <CertificateCardCarousel 
@@ -46,11 +44,8 @@ export default function Certificates() {
             Sobre mim
             </a>
           </Link>
-        </section>
-        
-      </main>
-
-      
+        </section>   
+      </main>     
     </>
   )
 }

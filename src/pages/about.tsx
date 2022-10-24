@@ -85,11 +85,8 @@ export default function About() {
               </a>
             </Link>
           </div>
-          
         </section>
       </main>
-
-      
     </>
   )
 }

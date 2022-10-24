@@ -1,14 +1,14 @@
 import React from 'react';
-import { ArrowRight, GithubLogo, LinkedinLogo } from 'phosphor-react';
-
 import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
+import { ArrowRight, GithubLogo, LinkedinLogo } from 'phosphor-react';
 
-import { ButtonLink } from '../components/ButtonLinks';
 import logoHome from '../../public/images/logo-home.png';
 
+import { ButtonLink } from '../components/ButtonLinks';
+
 import styles from '../styles/pages/home.module.scss';
-import Image from 'next/image';
 
 export default function Home() {
   return (
@@ -61,7 +61,6 @@ export default function Home() {
               </a>
             </Link>
           </div>
-          
         </section>
       </main>
     </>

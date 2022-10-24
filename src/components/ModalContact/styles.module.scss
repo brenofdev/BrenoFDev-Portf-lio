@@ -1,66 +1,82 @@
 .container {
   h2 {
-    color: #333;
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.6rem;
+
+    font-size: 3rem;
+    color: var(--pink-primary);
   }
 
   input {
     width: 100%;
-    padding: 0 1.5rem;
+    padding: 0 1.7rem;
     height: 5rem;
     border-radius: 0.5rem;
 
-    border: 1px solid #d7d7d7;
-    background: #e7e9ee;
+    border: 1px solid var(--gray-primary);
+    background: transparent;
 
     font-weight: 400;
     font-size: 1.5rem;
+    color: var(--white-primary);
+    
 
     &::placeholder {
-      color: #969cb3;
+      color: var(--gray-primary);
     }
 
     & + input {
-      margin-top: 1rem;
+      margin-top: 1.4rem;
     }
   }
 
   textarea {
     width: 100%;
     margin-top: 1rem;
-    padding: 1rem 1.5rem;
+    padding: 1rem 1.7rem;
     height: 15rem;
     border-radius: 0.5rem;
 
-    border: 1px solid #d7d7d7;
-    background: #e7e9ee;
+    border: 1px solid var(--gray-primary);
+    background: transparent;
 
     font-weight: 400;
     font-size: 1.5rem;
-
+    color: var(--white-secondary);
+    
     &::placeholder {
-      color: #969cb3;
-      // font-weight: 400;
+      color: var(--gray-primary);
     }
   }
 
   button[type="submit"] {
-    width: 100%;
+    width: 11.7rem;
     padding: 0 1.5rem;
     height: 4rem;
-    background: #333;
-    color: #fff;
-    border-radius: 0.5rem;
-    border: 0;
-    font-size: 1.5rem;
     margin-top: 1.5rem;
-    font-weight: 700;
+
+    font-size: 1.4rem;
+    font-weight: 400;
+    background: var(--pink-primary);
+    color: var(--white-primary);
+    border-radius: 0.4rem;
+    border: 0;
 
     transition: filter 0.2s;
 
     &:hover {
       filter: brightness(0.9);
     }
+  }
+}
+
+.footerContactModal {
+  position: absolute;
+  right: 3rem;
+  bottom: 3.5rem;
+  display: flex;
+  gap: 3rem;
+
+  strong {
+    color: var(--gray-primary);
   }
 }

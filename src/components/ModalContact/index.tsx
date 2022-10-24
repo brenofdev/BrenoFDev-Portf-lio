@@ -18,12 +18,13 @@ export function ModalContact({isOpen, onRequestClose}: ModalProps) {
   const [ name, setName ] = useState('');
   const [ email, setEmail ] = useState('');
   const [ message, setMessage ] = useState('');
+  const [ number, setNumber ] = useState('');
 
   
   async function handleSendEmail(event: FormEvent) {
     event.preventDefault()
 
-    if(!name || !email || !message) {
+    if(!name || !email || !message || !number ) {
       toast('Preencha todos os campos para enviar sua mensagem', {
         style: {
           background: '#333',
@@ -34,22 +35,23 @@ export function ModalContact({isOpen, onRequestClose}: ModalProps) {
     }
 
     try {
-      await sendContactMail(name, email, message);
+      await sendContactMail(name, email, message, number);
       setName('');
       setEmail('');
       setMessage('');
+      setNumber('');
       onRequestClose();
       toast('E-mail enviado com sucesso!', {
         style: {
-          background: '#fff',
-          color: '#333',
+          background: 'var(--pink-primary)',
+          color: 'var(--white-secondary)',
         }
       });
     } catch {
       toast('Ocorreu um erro ao tentar ao enviar sua mensagem. Tente novamente!', {
         style: {
-          background: '#333',
-          color: '#fff',
+          background: 'var(--black-primary)',
+          color: 'var(--white-secondary',
         }
       });
     }
@@ -69,14 +71,14 @@ export function ModalContact({isOpen, onRequestClose}: ModalProps) {
         onClick={onRequestClose}
         className="react-modal-close"
       >
-        <X size={20} />
+        <X size={28} />
       </button>
 
       <form 
         className={styles.container} 
         onSubmit={handleSendEmail}
       >
-        <h2>Mandar Mensagem</h2>
+        <h2>Vamos conversar</h2>
 
         <input 
           placeholder="Seu nome"
@@ -87,9 +89,16 @@ export function ModalContact({isOpen, onRequestClose}: ModalProps) {
 
         <input 
           type="email"
-          placeholder="Seu e-mail"
+          placeholder="Seu email"
           value={email}
           onChange={({target}) => setEmail(target.value)}
+          
+        />
+
+        <input 
+          placeholder="Seu telefone"
+          value={number}
+          onChange={({target}) => setNumber(target.value)}
           
         />
 
@@ -109,6 +118,10 @@ export function ModalContact({isOpen, onRequestClose}: ModalProps) {
         </button>
       </form>
 
+      <div className={styles.footerContactModal}>
+        <strong>brenodev@gmail.com</strong>
+        <strong>(77) 9 2000-7959</strong>
+      </div>
     </Modal>
   )
 }

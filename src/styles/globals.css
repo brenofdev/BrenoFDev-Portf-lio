@@ -39,9 +39,17 @@ body {
   font-family: 'Poppins';
 }
 
-/* body, input, textarea, select, button {
-  font: 400 1rem 'Poppins', sans-serif;
+body, input, textarea, select, button {
+  font: 400 1.6rem 'Poppins', sans-serif;
+}
+
+/* input[type=text]:focus {
+  border: 3px solid #FF1E8A;
 } */
+
+textarea:focus, input:focus{
+  border: 1px solid #FF1E8A;
+}
 
 button {
   cursor: pointer;
@@ -68,8 +76,8 @@ a {
 
 .react-modal-content {
   width: 100%;
-  max-width: 700px;
-  background: white;
+  max-width: 900px;
+  background: var(--black-primary);
   padding: 3rem;
   position: relative;
   border-radius: 0.25rem;
@@ -77,10 +85,11 @@ a {
 
 .react-modal-close {
   position: absolute;
-  top: 1.5rem;
-  right: 1.5rem;
+  top: 2.3rem;
+  right: 2.3rem;
   border: 0;
-  background: white;
+  color: var(--white-secondary);
+  background: none;
 
   transition: filter 0.2s;
   

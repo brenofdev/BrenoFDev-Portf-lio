@@ -12,8 +12,8 @@ export function ButtonLink({ link, tituloButton, iconButton }: ButtonLinkProps) 
   return (
     <Link href={link} >
       <a className={styles.buttonLink} target="_blank">
-        {iconButton}
         {tituloButton}
+        {iconButton}
       </a>
     </Link>
   )
