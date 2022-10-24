@@ -18,7 +18,7 @@ export default function Certificates() {
 
       <main className={styles.container}>
         <section className={styles.content}>
-          <h4>Certificado</h4>          
+          <h4>Certificados</h4>          
           
           <div className={styles.certificateCarouselContainer}>
             <CertificateCardCarousel 
