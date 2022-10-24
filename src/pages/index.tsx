@@ -28,11 +28,13 @@ export default function Home() {
             <div>
               <ButtonLink 
                 link={'https://www.linkedin.com/in/breno-f/'}
+                target={'_blank'}
                 tituloButton={'Linkedin'}
                 iconButton={<LinkedinLogo size={18}/>} 
               />
               <ButtonLink 
                 link={'https://github.com/brenofdev'}
+                target={'_blank'}
                 tituloButton={'Github'} 
                 iconButton={<GithubLogo size={18}/>} 
               />

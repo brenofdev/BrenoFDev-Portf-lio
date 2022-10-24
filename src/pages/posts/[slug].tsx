@@ -12,15 +12,20 @@ const QUERY = gql`
   query Post($slug: String!){
     post(where: {slug: $slug}){
       id
-      title
       slug
-      category
+      title
+      tools
+      functions
       coverPhoto {
         id
         url
       }
       content {
         html
+      }
+      mockupPhoto {
+        id
+        url
       }
       projectPhoto {
         id
@@ -41,23 +46,31 @@ const SLUGLIST = gql`
 export default function ProjectPost({post}){
   return (
     <main className={styles.container}>
-      <h3>{post.title}</h3>
+      <h4>{post.title}</h4>
       <div>
-        
         <h6>Descrição Geral do Projeto:</h6>
         <div
           className={styles.content}
           dangerouslySetInnerHTML={{ __html: post.content.html }}
         ></div>
+        <h6>Ferramentas:</h6>
+        <p>{post.tools}</p>
+        <h6>Funcionalidades:</h6>
+        <p>{post.functions}</p>
       </div>
-      <Image 
-        // className={styles.projectPhoto} 
-        src={post.projectPhoto.url} 
-        alt="banner do projeto"
-        width={1700}
-        height={3000} 
-        
-      />
+      <div className={styles.projectPhoto}>
+        <Image 
+          src={post.mockupPhoto.url}
+          width={1300}
+          height={400}
+        />
+        <Image
+          src={post.projectPhoto.url} 
+          alt="banner do projeto"
+          width={1300}
+          height={750} 
+        />
+      </div>
     </main>
   )
 }

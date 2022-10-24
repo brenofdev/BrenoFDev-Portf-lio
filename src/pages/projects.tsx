@@ -35,6 +35,10 @@ export default function Projects({ posts }) {
   return (
     <main className={styles.container}>
       <div className={styles.content}>
+
+        <h4>Portfólio</h4>
+        <small>Meus projetos recentes</small>
+
         {posts.map((post) => (
           <ProjectCard 
             key={post.id}

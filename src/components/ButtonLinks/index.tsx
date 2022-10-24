@@ -6,12 +6,13 @@ interface ButtonLinkProps {
   link: string;
   tituloButton: string;
   iconButton: any;
+  target: any;
 }
 
-export function ButtonLink({ link, tituloButton, iconButton }: ButtonLinkProps) {
+export function ButtonLink({ link, tituloButton, iconButton, target }: ButtonLinkProps) {
   return (
     <Link href={link} >
-      <a className={styles.buttonLink} target="_blank">
+      <a className={styles.buttonLink} target={target}>
         {tituloButton}
         {iconButton}
       </a>

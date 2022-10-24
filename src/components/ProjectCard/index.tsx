@@ -1,6 +1,7 @@
 import Image from 'next/image';
-import Link from 'next/link';
-// import { GraphQLClient, gql } from 'graphql-request';
+import { ArrowUpRight } from 'phosphor-react';
+
+import { ButtonLink } from '../ButtonLinks';
 
 import styles from './styles.module.scss';
 
@@ -12,27 +13,30 @@ export function ProjectCard({
     category
   }) {
   return (
-    <Link href={`/posts/${slug}`} >
-      <div className={styles.projectCard}>
-        <Image 
-          // className={styles.coverPhoto} 
-          src={coverPhoto.url} 
-          alt="capa do projeto" 
-          width={400}
-          height={200}
-        />
+    <div className={styles.projectCard}>
+      <Image
+        src={coverPhoto.url} 
+        alt="capa do projeto" 
+        width={568}
+        height={261}
+      />
 
-        <div className={styles.projectDescription}>
-          <strong>{title}</strong>
-          <div className={styles.content}>
-            {subContent}
-          </div>
-         
-          <div className={styles.category}>
-            {category}
-          </div>
+      <div className={styles.projectDescription}>
+        <div className={styles.category}>
+          {category}
         </div>
-      </div>    
-    </Link>
+        <strong>{title}</strong>
+        <div className={styles.content}>
+          {subContent}
+        </div>
+        
+        <ButtonLink
+          link={`/posts/${slug}`}
+          target={''}
+          tituloButton={'Ver projeto'}
+          iconButton={<ArrowUpRight color='var(--pink-primary)'/>}
+        />
+      </div>
+    </div>
   )
 }
