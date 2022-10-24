@@ -61,6 +61,7 @@ export default function ProjectPost({post}){
       <div className={styles.projectPhoto}>
         <Image 
           src={post.mockupPhoto.url}
+          alt="mockup do projeto"
           width={1300}
           height={400}
         />
