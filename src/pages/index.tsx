@@ -48,8 +48,8 @@ export default function Home() {
 
         <section className={styles.footerContainer}>
           <div>
-            <Link href="">
-              <a className={styles.curriculum}>
+            <Link href="https://docs.google.com/document/d/1mwxDbGXbSaTtfBMZWSEiX6O8bOxBQZMy8P1Xo4ZzRTw/edit?usp=sharing">
+              <a className={styles.curriculum} target="_blank">
                 Baixe meu CV
                 <hr />
               </a>
