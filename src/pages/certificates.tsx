@@ -16,7 +16,7 @@ export default function Certificates() {
         <title>Certificados | Breno Dev</title>
       </Head>
 
-      <main className={styles.container}>
+      <main className={styles.certificateContainer}>
         <section className={styles.content}>
           <h4>Certificados</h4>          
           

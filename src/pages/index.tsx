@@ -46,7 +46,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={styles.footerContainer}>
+        <footer className={styles.footerContainer}>
           <div>
             <Link href="https://docs.google.com/document/d/1mwxDbGXbSaTtfBMZWSEiX6O8bOxBQZMy8P1Xo4ZzRTw/edit?usp=sharing">
               <a className={styles.curriculum} target="_blank">
@@ -63,7 +63,7 @@ export default function Home() {
               </a>
             </Link>
           </div>
-        </section>
+        </footer>
       </main>
     </>
   )

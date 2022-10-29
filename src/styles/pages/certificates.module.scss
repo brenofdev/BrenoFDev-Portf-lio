@@ -1,4 +1,4 @@
-.container {
+.certificateContainer {
   background-color: var(--white-secondary);
   height: calc(100vh - 9.2rem);
   padding: 10rem 15rem 7.4rem 15rem;
@@ -40,6 +40,23 @@
 
     &:hover {
       color: var(--pink-primary);
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .certificateContainer {
+    padding: 5rem 4rem;
+    .content {
+      display: flex;
+      flex-direction: column;
+
+      .certificateCarouselContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 6.4rem;
+      }
     }
   }
 }

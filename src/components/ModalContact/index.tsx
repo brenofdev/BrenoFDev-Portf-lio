@@ -1,13 +1,11 @@
 import { FormEvent, useState } from 'react';
 import { X } from 'phosphor-react';
-
 import Modal from 'react-modal';
-
-import styles from './styles.module.scss';
 import toast from 'react-hot-toast';
+
 import { sendContactMail } from '../../services/sendMail';
 
-
+import styles from './styles.module.scss';
 
 interface ModalProps {
   isOpen: boolean;
@@ -29,7 +27,8 @@ export function ModalContact({isOpen, onRequestClose}: ModalProps) {
         style: {
           background: '#333',
           color: '#fff',
-        }
+        },
+        position: "bottom-center",
       });
       return;
     }
@@ -45,14 +44,16 @@ export function ModalContact({isOpen, onRequestClose}: ModalProps) {
         style: {
           background: 'var(--pink-primary)',
           color: 'var(--white-secondary)',
-        }
+        },
+        position: "bottom-center",
       });
     } catch {
       toast('Ocorreu um erro ao tentar ao enviar sua mensagem. Tente novamente!', {
         style: {
           background: 'var(--black-primary)',
           color: 'var(--white-secondary',
-        }
+        },
+        position: "bottom-center",
       });
     }
   }    

@@ -9,8 +9,8 @@
 
   .contentContainer {
     display: flex;
-    // align-items: center;
-    // justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
     gap: 30rem;
   }
 
@@ -65,6 +65,21 @@
           color: var(--pink-primary);
         }
       }
+    }
+  }
+}
+
+@media (max-width: 750px){
+  .aboutContainer {
+    background: var(--white-secondary);
+    padding: 7rem 4rem;
+
+    .aboutCertificates {
+      display: none;
+    }
+
+    .footerContainer {
+      margin: 10.8rem 0;
     }
   }
 }

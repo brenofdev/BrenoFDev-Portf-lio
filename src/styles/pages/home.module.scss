@@ -76,7 +76,20 @@
       }
     }
   }
-  
+}
+
+@media (max-width: 750px){
+  .homeContainer {
+    background: var(--white-secondary);
+    padding: 0 4rem;
+
+    .contentContainer {
+      padding-top: 16rem;
+      .logoHome {
+        display: none;
+      }
+    }
+  }
 }
 
 
