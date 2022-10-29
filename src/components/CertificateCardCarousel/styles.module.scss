@@ -46,3 +46,30 @@
   }
 }
 
+@media (max-width: 750px) {
+  .certificateCardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .certificateCardHeader {
+      width: 35rem;
+      height: 7rem;
+      padding: 1rem 2rem;
+
+      strong {
+        font-size: 1.2rem;
+      }
+
+      small {
+        font-size: 1.4rem;
+      }
+    }
+
+    .certificateCardFooter {
+      width: 35rem;
+      height: 15rem;
+    }
+  }
+  
+}

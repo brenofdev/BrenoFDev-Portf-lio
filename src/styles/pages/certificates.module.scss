@@ -46,7 +46,9 @@
 
 @media (max-width: 750px) {
   .certificateContainer {
-    padding: 5rem 4rem;
+    width: 100%;
+    height: 100vh;
+    padding: 4rem 4rem;
     .content {
       display: flex;
       flex-direction: column;

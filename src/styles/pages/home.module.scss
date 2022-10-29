@@ -81,15 +81,16 @@
 @media (max-width: 750px){
   .homeContainer {
     background: var(--white-secondary);
+    width: 100%;
     height: 100vh;
-    padding: 6rem 4rem;
+    padding: 4rem 4rem;
     
     .logoHome {
         display: none;
       }
 
     .footerContainer {
-      margin-bottom: 4rem;
+      margin-top: 4rem;
     }
   }
 }
