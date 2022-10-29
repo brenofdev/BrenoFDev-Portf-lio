@@ -81,15 +81,12 @@
 @media (max-width: 750px){
   .homeContainer {
     background: var(--white-secondary);
-    height: auto;
-    padding: 4rem 4rem;
-
-    .contentContainer {
-      padding-top: 12rem;
-      .logoHome {
+    height: 100vh;
+    padding: 6rem 4rem;
+    
+    .logoHome {
         display: none;
       }
-    }
   }
 }
 
